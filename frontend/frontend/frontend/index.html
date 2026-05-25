@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI App Compiler</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div>
+        <h1>AI App Compiler</h1>
+        <p>Natural language to validated executable app configuration</p>
+      </div>
+      <span class="badge">Compiler Pipeline Active</span>
+      <button id="themeToggle">
+  Theme
+</button>
+    </header>
+
+    <section class="pipeline">
+      <div>Intent Extraction</div>
+      <div>System Design</div>
+      <div>Schema Generation</div>
+      <div>Validation</div>
+      <div>Repair Engine</div>
+    </section>
+
+    <main>
+      <section class="panel">
+        <h2>Describe your app</h2>
+        <textarea id="prompt">Build a CRM with login contacts dashboard admin analytics and premium payments</textarea>
+
+        <div class="actions">
+          <button onclick="compileApp()">Compile App</button>
+          <button class="secondary" onclick="loadExample()">Load Example</button>
+        </div>
+      </section>
+
+      <section class="panel output-panel">
+
+  <div class="output-header">
+    <h2>Generated Configuration</h2>
+    <button onclick="copyOutput()">Copy</button>
+  </div>
+
+  <pre id="output">
+Waiting for compilation...
+  </pre>
+
+</section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
