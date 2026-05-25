@@ -12,7 +12,7 @@ async function compileApp() {
   try {
 
     const response = await fetch(
-      "http://localhost:5001/compile",
+      "https://ai-app-compiler-end4.onrender.com/compile",
       {
         method: "POST",
         headers: {
